@@ -9,8 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        NavigationStack {
-            
+Navigation Stack {
             VStack {
                 
                 Text("Welcome to Secure Food!")
