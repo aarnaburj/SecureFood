@@ -9,17 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Change 1")
-            Text("Change 2")
-            Text("Change 3.5")
-            Text("New Change - Aarna")
-            
+Navigation Stack {
+            VStack {
+                
+                Text("Welcome to Secure Food!")
+                Text("We are an app dedicated to helping combat food insecurity in California. Please choose one of these regions to recieve a list of resources to combat food insecurity.")
+                NavigationLink(destination: NorCal()) {
+                    Text("NorCal")
+                }
+
+            }
+            .padding()
         }
-        .padding()
     }
 }
 
