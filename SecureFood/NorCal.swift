@@ -9,7 +9,11 @@ import SwiftUI
 
 struct NorCal: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Text("Northern California")
+            .font(.system(size:35))
+            .fontWeight(.black)
+Text("Northern California constitutes the counties of Del Norte, Humboldt, Mendocino, Siskiyou, Modoc, Trinity, Shasta, Lassen, Tehama, Plumas, Glenn, Butte, Lake, Colusa, Sierra, and Nevada")
+
     }
 }
 
