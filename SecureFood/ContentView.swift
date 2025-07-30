@@ -10,10 +10,10 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationStack {
-            ScrollView {
+          ScrollView {
                 VStack(spacing: 20) {
-                    
-                    // title
+                  
+                   // title
                     Text("Welcome to Secure Food!")
                         .font(.system(size: 36, weight: .bold))
                         .foregroundColor(.black)
