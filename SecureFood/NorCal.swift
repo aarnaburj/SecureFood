@@ -88,18 +88,30 @@ struct NorCal: View {
                     Link("Sacramento Food Bank & Family Services (Sacramento County)", destination: URL(string: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")!)
 
                 }
+            }
+            .padding()
+        }
+        .background(Color.blue.opacity(0.2)) // light blue
+    }
+}
 
-                            }
+// Custom View for Link Bubbles
+struct ResourceLinkBubble: View {
+    var text: String
+    var url: String
 
-                            .padding()
-
-                        }
-
-                    }
-
-                }
-
-
+    var body: some View {
+        Link(destination: URL(string: url)!) {
+            Text(text)
+                .foregroundColor(.black)
+                .padding()
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .background(Color.white)
+                .cornerRadius(15)
+                .shadow(color: .gray.opacity(0.2), radius: 4, x: 0, y: 2)
+        }
+    }
+}
 
                 #Preview {
 
