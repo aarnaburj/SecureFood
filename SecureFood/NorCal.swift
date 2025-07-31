@@ -30,7 +30,11 @@ struct NorCal: View {
                 Text("Northern California constitutes the counties of Del Norte, Humboldt, Mendocino, Siskiyou, Modoc, Trinity, Shasta, Lassen, Tehama, Plumas, Glenn, Butte, Lake, Colusa, Sierra, and Nevada")
 
                     .font(.body)
-
+                    .padding()
+                    .background(RoundedRectangle(cornerRadius: 15)
+                        .fill(Color.white.opacity(0.4)) // Transparent fill
+                        .overlay(RoundedRectangle(cornerRadius: 15)
+                            .stroke(Color(red: 0.85, green: 0.65, blue: 0.1), lineWidth: 2)))
                 
 
                 Text("Food Resources")
@@ -44,48 +48,17 @@ struct NorCal: View {
                 
 
                 Group {
-
-                    Link("California Association of Food Banks", destination: URL(string: "https://www.cafoodbanks.org/find-food/#:~:text=Call%20211,%2D877%2D847%2D3663")!)
-
-                    
-
-                    Link("Concord food bank", destination: URL(string: "https://www.foodbankccs.org/map-city/concord/")!)
-
-                    
-
-                    Link("North state food bank", destination: URL(string: "https://www.buttecaa.com/north-state-food-bank/")!)
-
-                    
-
-                    Link("Food for People (Humboldt County)", destination: URL(string: "https://www.foodforpeople.org/")!)
-
-                    
-
-                    Link("Meals on Wheels Northern California", destination: URL(string: "https://www.mowsac.org/")!)
-
-                    
-
-                    Link("No kid hungry california", destination: URL(string: "https://state.nokidhungry.org/california/")!)
-
-                    
-
-                    Link("Del Norte & Tribal Lands Community Food Council (DNATL CFC)", destination: URL(string: "https://www.dnatlfoodcouncil.org/")!)
-
-                    
-
-                    Link("Redwood Empire Food Bank Mobile Food Pantry", destination: URL(string: "https://getfood.refb.org/getfood.html")!)
-
-                    
-
-                    Link("Food Bank of Nevada County (Grass Valley area)", destination: URL(string: "https://foodbankofnc.org/get-food-here")!)
-
-                    
-
-                    Link("Sacramento Food Bank Mobile Pantry", destination: URL(string: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")!)
-
-                    
-
-                    Link("Sacramento Food Bank & Family Services (Sacramento County)", destination: URL(string: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")!)
+                    LinkA(text: "California Association of Food Banks", url: "https://www.cafoodbanks.org/find-food/#:~:text=Call%20211,%2D877%2D847%2D3663")
+                    LinkA(text: "Concord food bank", url: "https://www.foodbankccs.org/map-city/concord/")
+                    LinkA(text: "North state food bank", url: "https://www.buttecaa.com/north-state-food-bank/")
+                    LinkA(text: "Food for People (Humboldt County)", url: "https://www.foodforpeople.org/")
+                    LinkA(text: "Meals on Wheels Northern California", url: "https://www.mowsac.org/")
+                    LinkA(text: "No kid hungry California", url: "https://state.nokidhungry.org/california/")
+                    LinkA(text: "Del Norte & Tribal Lands Community Food Council (DNATL CFC)", url: "https://www.dnatlfoodcouncil.org/")
+                    LinkA(text: "Redwood Empire Food Bank Mobile Food Pantry", url: "https://getfood.refb.org/getfood.html")
+                    LinkA(text: "Food Bank of Nevada County (Grass Valley area)", url: "https://foodbankofnc.org/get-food-here")
+                    LinkA(text: "Sacramento Food Bank Mobile Pantry", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
+                    LinkA(text: "Sacramento Food Bank & Family Services (Sacramento County)", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
 
                 }
             }
@@ -96,7 +69,7 @@ struct NorCal: View {
 }
 
 // Custom View for Link Bubbles
-struct ResourceLinkBubble: View {
+struct LinkA: View {
     var text: String
     var url: String
 
