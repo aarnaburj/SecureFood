@@ -28,8 +28,8 @@ struct ContentView: View {
                         .cornerRadius(20)
                         .padding(.horizontal)
 
-                    // map image "regions"
-                    Image("regions")
+                    // map image "counties"
+                    Image("counties")
                         .resizable()
                         .scaledToFit()
                         .frame(maxWidth: .infinity)
