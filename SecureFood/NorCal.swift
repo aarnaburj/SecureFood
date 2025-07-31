@@ -48,17 +48,17 @@ struct NorCal: View {
                 
 
                 Group {
-                    LinkBubble(text: "California Association of Food Banks", url: "https://www.cafoodbanks.org/find-food/#:~:text=Call%20211,%2D877%2D847%2D3663")
-                    LinkBubble(text: "Concord food bank", url: "https://www.foodbankccs.org/map-city/concord/")
-                    LinkBubble(text: "North state food bank", url: "https://www.buttecaa.com/north-state-food-bank/")
-                    LinkBubble(text: "Food for People (Humboldt County)", url: "https://www.foodforpeople.org/")
-                    LinkBubble(text: "Meals on Wheels Northern California", url: "https://www.mowsac.org/")
-                    LinkBubble(text: "No kid hungry California", url: "https://state.nokidhungry.org/california/")
-                    LinkBubble(text: "Del Norte & Tribal Lands Community Food Council (DNATL CFC)", url: "https://www.dnatlfoodcouncil.org/")
-                    LinkBubble(text: "Redwood Empire Food Bank Mobile Food Pantry", url: "https://getfood.refb.org/getfood.html")
-                    LinkBubble(text: "Food Bank of Nevada County (Grass Valley area)", url: "https://foodbankofnc.org/get-food-here")
-                    LinkBubble(text: "Sacramento Food Bank Mobile Pantry", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
-                    LinkBubble(text: "Sacramento Food Bank & Family Services (Sacramento County)", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
+                    LinkA(text: "California Association of Food Banks", url: "https://www.cafoodbanks.org/find-food/#:~:text=Call%20211,%2D877%2D847%2D3663")
+                    LinkA(text: "Concord food bank", url: "https://www.foodbankccs.org/map-city/concord/")
+                    LinkA(text: "North state food bank", url: "https://www.buttecaa.com/north-state-food-bank/")
+                    LinkA(text: "Food for People (Humboldt County)", url: "https://www.foodforpeople.org/")
+                    LinkA(text: "Meals on Wheels Northern California", url: "https://www.mowsac.org/")
+                    LinkA(text: "No kid hungry California", url: "https://state.nokidhungry.org/california/")
+                    LinkA(text: "Del Norte & Tribal Lands Community Food Council (DNATL CFC)", url: "https://www.dnatlfoodcouncil.org/")
+                    LinkA(text: "Redwood Empire Food Bank Mobile Food Pantry", url: "https://getfood.refb.org/getfood.html")
+                    LinkA(text: "Food Bank of Nevada County (Grass Valley area)", url: "https://foodbankofnc.org/get-food-here")
+                    LinkA(text: "Sacramento Food Bank Mobile Pantry", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
+                    LinkA(text: "Sacramento Food Bank & Family Services (Sacramento County)", url: "https://www.sacramentofoodbank.org/find-food#googtrans(en|en)")
 
                 }
             }
@@ -69,7 +69,7 @@ struct NorCal: View {
 }
 
 // Custom View for Link Bubbles
-struct ResourceLinkBubble: View {
+struct LinkA: View {
     var text: String
     var url: String
 
