@@ -115,8 +115,9 @@ struct SoCal: View {
                     
                     
                 }
-                
             }
+            .background(Color(red: 0.9, green: 1.0, blue: 0.6)) // mint green
+            .ignoresSafeArea()
         }
     }
 }
